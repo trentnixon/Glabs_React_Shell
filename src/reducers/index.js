@@ -1,11 +1,11 @@
 import { combineReducers } from "redux";
 
 import UI_DATA from "./UI";
-import APP from "../js/Application/reducers/Application";
+//import APP from "../js/Application/reducers/Application";
 
 const reducers = combineReducers({
 		UI:UI_DATA,
-		APP:APP
+		//APP:APP
 	})
 
 export default reducers;
