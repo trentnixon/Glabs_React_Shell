@@ -66,25 +66,46 @@ The template allows for easy integration of any client react applications as dev
 - 2: Move Application files to Template Structure:
 ```
 -src
--js
+    -js
 		-Application
 ```
 Each Application should come with a ReadMe file for any specific Application Installation steps
 
 - 3: Link Application to the Template
 ```
-Main.js : Line 6
-Component Name can also be amended from “Default” to “Application Name”
+    -src
+        -js
+            -pages
+                -Main.js : Line 6
+                // Application
+                import Default from "../Application/Default/Default";
+    
+                Imported Component Name can also be amended from “Default” to “Application Name of choice”
 ```
 - 4: Move Application.json
 	```
-	Move Application.json file found in “[Application Name]/Json” to “Public/Json”. 
-Load.js should be hooked up to read this file now.
+	Move Application.json file found in 
+            
+            -js
+                -Application
+                    -json/Application.json” 
+            to 
+            -Public
+                -Json” 
+
+            Overwrite or append to file in this folder
+            Load.js will be hooked up to read this file.
 ```
-- 5:Include new path to Application Reducers
-	```
-	“src/reducer/index.js” 
-           Update the APP path to the  [Application Name]/reducer file
+- 5:Include new path to Application Reducers and uncomment Reducer Instance
+```
+	-src
+        -reducer
+            -index.js
+        Update the APP path to the   Application Name]/reducer file
+        //import APP from "../js/[Application Name]/reducers/Application.js";
+    
+        Uncomment Line:8
+        //APP:APP
 ```
 - 6:Hook up Actions
 ```
