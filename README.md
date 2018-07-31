@@ -26,10 +26,10 @@ ALL content for this section is found in data.json in the public file. NO hard c
 
 ### Header
 ```
-- Client Logo and Link (Tracked in GA)
-- Partner Zone Copy and Link (Tracked in GA)
-- Project Title
-- Project Sub Title
+Client Logo and Link (Tracked in GA)
+Partner Zone Copy and Link (Tracked in GA)
+Project Title
+Project Sub Title
 ```
 
 ### Body Copy
@@ -63,8 +63,6 @@ Clone using VSC:
 > npm install
 
 Only libraries to run basic functions will be installed at this point. No Application specific files will be downloaded.
-
-
 
 
 ## Start Instance
@@ -117,6 +115,13 @@ Each Application should come with a ReadMe file for any specific Application Ins
                import Default from "../Application/Default/Default";
   
                Imported Component Name can also be amended from “Default” to “Application Name of choice”
+
+--- Include Application Styles
+ -src
+     -css
+            -pages
+                  -_Main.scss
+             Amend line:22 to path to @import the  Global Application scss file.
 ```
 - 4: Move Application.json
 ```
@@ -153,35 +158,20 @@ Each Application should come with a ReadMe file for any specific Application Ins
 ```
 
 
-
-
-
-
-
 ## Theming Template and Applications
-What The shell has (theming, header,footer etc)
+Global Theming of the Template and Applications
+Scss theme files can be found:
+```
+-src
+    -css
+         -scss
+              -Theme
+                    _Theme_Colors.scss
+                    _Theme_Fonts.scss
+                    _Theme_Typography.scss
+         _Mixin.scss
+        _variables.scss
+```
 
-
-
-
-
-
-Adding content to the template
-Editing the theme
-How to Set up files for Application
-GA Code
-
-
-
-
-
-Set up for Deployment
-
-
-
-
-
-
-
-
-
+Amend Colors, Fonts and Type Variables in these files. These should be enough to amend the Shell for any campaign.
+Application Styles should be done within the Application scss folder!
