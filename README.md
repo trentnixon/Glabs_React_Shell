@@ -57,8 +57,6 @@ http://react-shell.surge.sh/assets/images/Picture%205.png
 
 
 
-
-
 ## Adding an Application
 
 The template allows for easy integration of any client react applications as developed by Glabs. Applications are downloaded separately and manually installed.
@@ -67,7 +65,7 @@ The template allows for easy integration of any client react applications as dev
 ```
 -src
     -js
-		-Application
+        -Application
 ```
 Each Application should come with a ReadMe file for any specific Application Installation steps
 
