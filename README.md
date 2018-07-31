@@ -7,7 +7,7 @@ Current Version 0.4.0
 
 ## Template Structure
 
-##[Pages]
+## [Pages]
 **Loading.js**  
 Provides a Themed loading page which is displayed whilst json data files are being loaded in.
 
@@ -23,19 +23,19 @@ ALL content for this section is found in data.json in the public file. NO hard c
 
 ### The Outer Shell
 
-###Header
+### Header
 > Client Logo and Link (Tracked in GA)
 > Partner Zone Copy and Link (Tracked in GA)
 > Project Title
 >Project Sub Title
 
-###Body Copy
+### Body Copy
 This is basic Body copy that can precede the main application. Body Copy is optional.
 
 ### Social Bar
 Includes Social Icons and a Client base CTA just before the footer.
 
-###Footer
+### Footer
 Additional Copy at the bottom of the page if required
 
 
@@ -173,3 +173,12 @@ GA Code
 
 
 Set up for Deployment
+
+
+
+
+
+
+
+
+
