@@ -19,7 +19,7 @@ ALL content for this section is found in data.json in the public file. NO hard c
 
 ## Main.js Structure
 > - Outer Shell
->       - Application
+>    - Application
 > - /Outer Shell
 
 ### The Outer Shell
