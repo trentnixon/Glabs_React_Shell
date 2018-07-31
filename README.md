@@ -2,7 +2,44 @@
 
 This is a baseline React Template for Glabs Australia Atom Templates.
 The Template is a basic shell and Structure use to host client builds and bespoke applications.
+
 Current Version 0.4.0
+
+## Template Structure
+
+##[Pages]
+**Loading.js**  
+Provides a Themed loading page which is displayed whilst json data files are being loaded in.
+
+
+**Main.js** Application Page. 
+This page is loaded once all json files have finished loading into the reducer.
+ALL content for this section is found in data.json in the public file. NO hard coded content should be found in these files!!
+
+##Main.js Structure
+> <Outer Shell>
+>       <Application>
+> </Outer Shell>
+
+### The Outer Shell
+
+###Header
+> Client Logo and Link (Tracked in GA)
+> Partner Zone Copy and Link (Tracked in GA)
+> Project Title
+>Project Sub Title
+
+###Body Copy
+This is basic Body copy that can precede the main application. Body Copy is optional.
+
+### Social Bar
+Includes Social Icons and a Client base CTA just before the footer.
+
+###Footer
+Additional Copy at the bottom of the page if required
+
+
+
 
 ### Download, Install, Edit, Integrate,Build, Stage and  Deploy
 
@@ -19,7 +56,7 @@ Current Version 0.4.0
 Clone using VSC:
 > https://github.com/trentnixon/Glabs_React_Shell.git
 
- ## Install
+## Install
 > npm install
 
 Only libraries to run basic functions will be installed at this point. No Application specific files will be downloaded.
@@ -27,13 +64,11 @@ Only libraries to run basic functions will be installed at this point. No Applic
 
 
 
-
-
- ## Start Instance
+## Start Instance
 
 Start the development server on your local host
 
- > npm start
+> npm start
 
 
 ## Production/Build Dependency edits
@@ -48,7 +83,7 @@ _Theme_Fonts.scss
 Line : 3
 ```
 ## Produce Build Files
- > npm run build
+> npm run build
 
 ### Example Image,
 http://react-shell.surge.sh/assets/images/Picture%205.png
@@ -64,54 +99,54 @@ The template allows for easy integration of any client react applications as dev
 - 2: Move Application files to Template Structure:
 ```
 -src
-    -js
-        -Application
+   -js
+       -Application
 ```
 Each Application should come with a ReadMe file for any specific Application Installation steps
 
 - 3: Link Application to the Template
 ```
-    -src
-        -js
-            -pages
-                -Main.js : Line 6
-                // Application
-                import Default from "../Application/Default/Default";
-    
-                Imported Component Name can also be amended from “Default” to “Application Name of choice”
+   -src
+       -js
+           -pages
+               -Main.js : Line 6
+               // Application
+               import Default from "../Application/Default/Default";
+  
+               Imported Component Name can also be amended from “Default” to “Application Name of choice”
 ```
 - 4: Move Application.json
 ```
-	Move Application.json file found in 
-            
-            -js
-                -Application
-                    -json/Application.json
-            to 
-            -Public
-                -Json
+    Move Application.json file found in
+          
+           -js
+               -Application
+                   -json/Application.json
+           to
+           -Public
+               -Json
 
-            Overwrite or append to file in this folder
-            Load.js will be hooked up to read this file.
+           Overwrite or append to file in this folder
+           Load.js will be hooked up to read this file.
 ```
 
 - 5: Include new path to Application Reducers and uncomment Reducer Instance
 
 ```
-	-src
-        -reducer
-            -index.js
-        Update the APP path to the   Application Name]/reducer file
-        //import APP from "../js/[Application Name]/reducers/Application.js";
-    
-        Uncomment Line:8
-        //APP:APP
+    -src
+       -reducer
+           -index.js
+       Update the APP path to the   Application Name]/reducer file
+       //import APP from "../js/[Application Name]/reducers/Application.js";
+  
+       Uncomment Line:8
+       //APP:APP
 ```
 
 - 6: Hook up Actions
 
 ```
-	Insure path to “store” is correct
+    Insure path to “store” is correct
 ```
 
 
@@ -127,9 +162,6 @@ What The shell has (theming, header,footer etc)
 
 
 
-Purpose of file.
-
-
 
 Adding content to the template
 Editing the theme
@@ -141,9 +173,3 @@ GA Code
 
 
 Set up for Deployment
-
-
-
-
-
-
