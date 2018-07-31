@@ -12,22 +12,25 @@ Current Version 0.4.0
 Provides a Themed loading page which is displayed whilst json data files are being loaded in.
 
 
-**Main.js** Application Page. 
+**Main.js** 
+Application Page. 
 This page is loaded once all json files have finished loading into the reducer.
 ALL content for this section is found in data.json in the public file. NO hard coded content should be found in these files!!
 
-##Main.js Structure
-> <Outer Shell>
->       <Application>
-> </Outer Shell>
+## Main.js Structure
+> -Outer Shell
+>       -Application
+> - /Outer Shell
 
 ### The Outer Shell
 
 ### Header
-> Client Logo and Link (Tracked in GA)
-> Partner Zone Copy and Link (Tracked in GA)
-> Project Title
->Project Sub Title
+```
+- Client Logo and Link (Tracked in GA)
+- Partner Zone Copy and Link (Tracked in GA)
+- Project Title
+- Project Sub Title
+```
 
 ### Body Copy
 This is basic Body copy that can precede the main application. Body Copy is optional.
@@ -41,7 +44,7 @@ Additional Copy at the bottom of the page if required
 
 
 
-### Download, Install, Edit, Integrate,Build, Stage and  Deploy
+# Download, Install, Edit, Integrate,Build, Stage and  Deploy
 
 - Clone This Repo in VSC
 - npm install :Fetch Package dependencies.
