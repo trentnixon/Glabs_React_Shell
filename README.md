@@ -123,7 +123,7 @@ Include Application Styles
                 -_Main.scss
 
     Amend line:22 to path to @import the  Global Application scss file.
-    
+
 ```
 - 4: Move Application.json
 ```
@@ -171,7 +171,7 @@ Scss theme files can be found:
                     _Theme_Colors.scss
                     _Theme_Fonts.scss
                     _Theme_Typography.scss
-         _Mixin.scss
+        _Mixin.scss
         _variables.scss
 ```
 
