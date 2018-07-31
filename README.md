@@ -81,20 +81,22 @@ Each Application should come with a ReadMe file for any specific Application Ins
                 Imported Component Name can also be amended from “Default” to “Application Name of choice”
 ```
 - 4: Move Application.json
-	```
+```
 	Move Application.json file found in 
             
             -js
                 -Application
-                    -json/Application.json” 
+                    -json/Application.json
             to 
             -Public
-                -Json” 
+                -Json
 
             Overwrite or append to file in this folder
             Load.js will be hooked up to read this file.
 ```
-- 5:Include new path to Application Reducers and uncomment Reducer Instance
+
+- 5: Include new path to Application Reducers and uncomment Reducer Instance
+
 ```
 	-src
         -reducer
@@ -105,7 +107,9 @@ Each Application should come with a ReadMe file for any specific Application Ins
         Uncomment Line:8
         //APP:APP
 ```
-- 6:Hook up Actions
+
+- 6: Hook up Actions
+
 ```
 	Insure path to “store” is correct
 ```
