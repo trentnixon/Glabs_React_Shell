@@ -107,7 +107,7 @@ Each Application should come with a ReadMe file for any specific Application Ins
 
 - 3: Link Application to the Template
 ```
-   -src
+    -src
        -js
            -pages
                -Main.js : Line 6
@@ -116,12 +116,14 @@ Each Application should come with a ReadMe file for any specific Application Ins
   
                Imported Component Name can also be amended from “Default” to “Application Name of choice”
 
---- Include Application Styles
- -src
-     -css
+Include Application Styles
+    -src
+        -css
             -pages
-                  -_Main.scss
-             Amend line:22 to path to @import the  Global Application scss file.
+                -_Main.scss
+
+    Amend line:22 to path to @import the  Global Application scss file.
+    
 ```
 - 4: Move Application.json
 ```
