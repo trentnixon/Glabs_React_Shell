@@ -1,7 +1,7 @@
 ## Glabs Australia React Shell
 
-This repo is a basic React shell for Glabs Australia. Its purpose is to help with the templating of repetitive components for Immersive Client work.
-
+This is a baseline React Template for Glabs Australia Atom Templates.
+The Template is a basic shell and Structure use to host client builds and bespoke applications.
 Current Version 0.4.0
 
 ### Download, Install, Edit, Integrate,Build, Stage and  Deploy
@@ -9,10 +9,10 @@ Current Version 0.4.0
 - Clone This Repo in VSC
 - npm install :Fetch Package dependencies.
 - Edit CDN/Server Paths
+- Theming Template
 - Integrate with Client Application.
 - Stage in Surge
 - Deploy to Composer
-
 
 ## Clone Repo
 
@@ -50,21 +50,61 @@ Line : 3
 ## Produce Build Files
  > npm run build
 
-
-
-
-What The shell has (theming, header,footer etc)
-
-Example images,
+### Example Image,
 http://react-shell.surge.sh/assets/images/Picture%205.png
-  Example link
+### Example link
 [Live Demo ](http://react-shell.surge.sh/).
 
 
 
+
+
+## Adding an Application
+
+The template allows for easy integration of any client react applications as developed by Glabs. Applications are downloaded separately and manually installed.
+1: Clone base application from git.
+2: Move Application files to Template Structure:
+```
+-src
+-js
+		-Application
+```
+Each Application should come with a ReadMe file for any specific Application Installation steps
+3: Link Application to the Template
+```
+Main.js : Line 6
+Component Name can also be amended from “Default” to “Application Name”
+```
+4: Move Application.json
+	```
+	Move Application.json file found in “[Application Name]/Json” to “Public/Json”. 
+Load.js should be hooked up to read this file now.
+```
+5:Include new path to Application Reducers
+	```
+	“src/reducer/index.js” 
+           Update the APP path to the  [Application Name]/reducer file
+```
+6:Hook up Actions
+```
+	Insure path to “store” is correct
+```
+
+
+
+
+
+
+
+## Theming Template and Applications
+What The shell has (theming, header,footer etc)
+
+
+
+
+
 Purpose of file.
-This is a baseline React Template for Glabs Australia Atom Templates.
-The Template is a basic shell and Structure use to host client builds and bespoke applications.
+
 
 
 Adding content to the template
