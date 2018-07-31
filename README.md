@@ -62,30 +62,31 @@ http://react-shell.surge.sh/assets/images/Picture%205.png
 ## Adding an Application
 
 The template allows for easy integration of any client react applications as developed by Glabs. Applications are downloaded separately and manually installed.
-1: Clone base application from git.
-2: Move Application files to Template Structure:
+- 1: Clone base application from git.
+- 2: Move Application files to Template Structure:
 ```
 -src
 -js
 		-Application
 ```
 Each Application should come with a ReadMe file for any specific Application Installation steps
-3: Link Application to the Template
+
+- 3: Link Application to the Template
 ```
 Main.js : Line 6
 Component Name can also be amended from “Default” to “Application Name”
 ```
-4: Move Application.json
+- 4: Move Application.json
 	```
 	Move Application.json file found in “[Application Name]/Json” to “Public/Json”. 
 Load.js should be hooked up to read this file now.
 ```
-5:Include new path to Application Reducers
+- 5:Include new path to Application Reducers
 	```
 	“src/reducer/index.js” 
            Update the APP path to the  [Application Name]/reducer file
 ```
-6:Hook up Actions
+- 6:Hook up Actions
 ```
 	Insure path to “store” is correct
 ```
